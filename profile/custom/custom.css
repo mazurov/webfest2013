@@ -1,0 +1,27 @@
+#header .container {
+    background-image: url('/static/cern.png');
+    background-repeat: no-repeat;
+    display: block;  /* may not need this, but I've found I do */
+    background-position: right;
+    height: 59px;
+}
+
+.cell.selected {
+    border-radius: 4px;
+    border: thin #3861aa solid;
+}
+
+#menubar .navbar-inner {
+    background-color: #3861aa;
+    background-image: linear-gradient(to bottom, #ffffff, #3861aa);
+}
+
+#header .navbar-inner {
+    min-height: 60px
+}
+
+.navbar .nav>li>a {
+    color: black;
+    text-decoration: none;
+    text-shadow: 0 1px 0 lightgray;
+}
