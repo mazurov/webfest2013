@@ -1,0 +1,1 @@
+Put these files to ```$(ipython locate profile)/static/```
