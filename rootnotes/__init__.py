@@ -29,7 +29,7 @@ def display_any(obj):
     return ip_img._repr_png_()
 
 # register display func with PNG formatter:
-png_formatter = get_ipython().display_formatter.formatters['image/png']
+png_formatter = get_ipython().display_formatter.formatters['image/png']  # noqa
 
 png_formatter.for_type(ROOT.TCanvas, display_canvas)
 png_formatter.for_type(ROOT.TF1, display_any)
