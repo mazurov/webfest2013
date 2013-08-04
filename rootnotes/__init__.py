@@ -6,12 +6,13 @@ import tempfile
 from IPython.core import display
 
 
-def default_canvas():
-    canvas = ROOT.gROOT.FindObject("icanvas")
+def default_canvas(name="icanvas", size=(800, 600)):
+    canvas = ROOT.gROOT.FindObject(name)
+    assert len(size) == 2
     if canvas:
         return canvas
     else:
-        return ROOT.TCanvas("icanvas", "icanvas", 800, 600)
+        return ROOT.TCanvas(name, name, size[0], size[1])
 
 
 def display_canvas(canvas):
